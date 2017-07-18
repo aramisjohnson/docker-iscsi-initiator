@@ -1,8 +1,8 @@
-FROM debian
+FROM ubuntu:16.04
 MAINTAINER aramisjohnson <aramis.johnson2010@gmail.com>
 
 RUN apt-get update
-RUN apt-get install open-iscsi
+RUN apt-get -y install open-iscsi
 
 RUN mkdir -p /mnt/storage
 WORKDIR /tmp
